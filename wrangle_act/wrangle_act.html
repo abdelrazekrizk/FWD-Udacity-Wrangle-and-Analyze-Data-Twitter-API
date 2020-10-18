@@ -14280,19 +14280,20 @@ Analyzing And Visualizing The Tweet Archive Of Twitter User @Dog_Rates </button>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>             <span class="c1">#this module routines for NT or Posix depending on what system we&#39;re on.</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>              <span class="c1">#this module routines for NT or Posix depending on what system we&#39;re on.</span>
 <span class="kn">import</span> <span class="nn">tweepy</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">urllib.parse</span>    <span class="c1">#this module Parse (absolute and relative) URLs.</span>
-<span class="kn">import</span> <span class="nn">requests</span>        <span class="c1">#this module Requests is an HTTP library, written in Python, for human beings. Basic GET usage:</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span> <span class="c1">#this module </span>
+<span class="kn">import</span> <span class="nn">urllib.parse</span>    <span class="c1"># this module Parse (absolute and relative) URLs.</span>
+<span class="kn">import</span> <span class="nn">requests</span>        <span class="c1"># this module Requests is an HTTP library, written in Python, for human beings. Basic GET usage:</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>    <span class="c1"># this module </span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">json</span>           <span class="c1">#this module:json exposes an API familiar to users of the standard library module</span>
-<span class="kn">import</span> <span class="nn">time</span>           <span class="c1">#This module provides various functions to manipulate time values.</span>
-<span class="kn">import</span> <span class="nn">nbconvert</span>
+<span class="kn">import</span> <span class="nn">json</span>            <span class="c1"># this module:json exposes an API familiar to users of the standard library module</span>
+<span class="kn">import</span> <span class="nn">time</span>            <span class="c1"># This module provides various functions to manipulate time values.</span>
+<span class="kn">import</span> <span class="nn">nbconvert</span>       <span class="c1"># This module converting notebooks to and from different formats</span>
 <span class="kn">import</span> <span class="nn">pyppeteer</span>
-<span class="kn">import</span> <span class="nn">pandocfilters</span>
+<span class="kn">import</span> <span class="nn">pandocfilters</span>   <span class="c1"># This Functions to aid writing python scripts that process the pandoc AST serialized as JSON.</span>
 <span class="kn">import</span> <span class="nn">pip</span>
+
 <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;libarary-Imported&quot;</span><span class="p">)</span>
 </pre></div>
 
@@ -14343,6 +14344,7 @@ Analyzing And Visualizing The Tweet Archive Of Twitter User @Dog_Rates </button>
 <span class="kn">from</span> <span class="nn">nbconvert</span> <span class="kn">import</span> <span class="n">webpdf</span> 
 <span class="kn">from</span> <span class="nn">nbconvert</span> <span class="kn">import</span> <span class="n">nbconvertapp</span>
 <span class="kn">from</span> <span class="nn">nbconvert</span> <span class="kn">import</span> <span class="n">templates</span>
+
 <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;functions-Imported&quot;</span><span class="p">)</span>
 </pre></div>
 
@@ -14401,19 +14403,33 @@ Analyzing And Visualizing The Tweet Archive Of Twitter User @Dog_Rates </button>
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&#39;C:\\Users\\abdel\\FWD-Udacity-Wrangle-and-Analyze-Data-Twitter-API&#39;</pre>
+<pre>&#39;C:\\Users\\abdel&#39;</pre>
 </div>
 
 </div>
 
 </div>
 
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="s2">&quot;G:\Workshop_Projects\GitHub_Repositories\FWD-Udacity-Wrangle-and-Analyze-Data-Twitter-API&quot;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ls</span>
@@ -14436,32 +14452,36 @@ Analyzing And Visualizing The Tweet Archive Of Twitter User @Dog_Rates </button>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre> Volume in drive C has no label.
- Volume Serial Number is 4EC7-F09B
+<pre> Volume in drive G is Programs
+ Volume Serial Number is 0459-BFA6
 
- Directory of C:\Users\abdel\FWD-Udacity-Wrangle-and-Analyze-Data-Twitter-API
+ Directory of G:\Workshop_Projects\GitHub_Repositories\FWD-Udacity-Wrangle-and-Analyze-Data-Twitter-API
 
-10/16/2020  03:35 PM    &lt;DIR&gt;          .
-10/16/2020  03:35 PM    &lt;DIR&gt;          ..
+10/18/2020  01:48 PM    &lt;DIR&gt;          .
+10/18/2020  01:48 PM    &lt;DIR&gt;          ..
 10/12/2020  01:54 PM                66 .gitattributes
-10/16/2020  03:02 PM    &lt;DIR&gt;          .ipynb_checkpoints
-10/16/2020  02:58 PM    &lt;DIR&gt;          .vscode
+10/16/2020  03:52 PM    &lt;DIR&gt;          .ipynb_checkpoints
+10/12/2020  02:49 PM    &lt;DIR&gt;          .vscode
+10/17/2020  02:32 PM    &lt;DIR&gt;          act_report
+10/18/2020  01:33 PM            15,914 dog_stages.png
 10/13/2020  01:16 AM            38,329 egypt fwd initiative.jpg
 10/14/2020  12:56 PM           195,293 FWD.jpg
-10/16/2020  03:35 PM           335,079 image_predictions.tsv
-10/12/2020  01:45 PM           335,079 image-predictions-3.tsv
-10/16/2020  03:45 AM           923,437 main_df.csv
+10/18/2020  01:30 PM           335,079 image_predictions.tsv
+10/18/2020  01:33 PM           930,388 main_df.csv
+10/18/2020  01:31 PM               117 Popularity_of_dog.csv
+10/18/2020  01:31 PM            15,629 Popularity_of_dog.png
 10/14/2020  02:06 PM        10,540,363 tweet_json.txt
 10/12/2020  01:45 PM        10,609,234 tweet-json
 10/12/2020  01:43 PM        10,609,234 tweet-json.txt
 10/12/2020  01:46 PM           614,603 tweet-json.zip
+10/18/2020  01:33 PM            13,331 Twitter_source.png
 10/12/2020  01:42 PM             1,764 twitter-api.py
 10/12/2020  02:44 PM           915,692 twitter-archive-enhanced.csv
-10/16/2020  03:21 PM           863,974 wrangle_act.html
-10/16/2020  03:26 PM           355,700 wrangle_act.ipynb
-10/16/2020  02:41 PM           227,479 wrangle_act.pdf
-              15 File(s)     36,565,326 bytes
-               4 Dir(s)  566,286,606,336 bytes free
+10/17/2020  03:31 AM    &lt;DIR&gt;          wrangle_act
+10/18/2020  01:48 PM           320,198 wrangle_act.ipynb
+10/17/2020  01:40 PM    &lt;DIR&gt;          wrangle_report
+              16 File(s)     35,155,234 bytes
+               7 Dir(s)  239,267,172,352 bytes free
 </pre>
 </div>
 </div>
@@ -14483,12 +14503,12 @@ Analyzing And Visualizing The Tweet Archive Of Twitter User @Dog_Rates </button>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">archive</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;twitter-archive-enhanced.csv&quot;</span><span class="p">)</span>
-<span class="n">archive</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;tweet_id&#39;</span><span class="p">)</span>
-<span class="n">archive</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">archive_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;twitter-archive-enhanced.csv&quot;</span><span class="p">)</span>
+<span class="n">archive_df</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;tweet_id&#39;</span><span class="p">)</span>
+<span class="n">archive_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14504,7 +14524,7 @@ Analyzing And Visualizing The Tweet Archive Of Twitter User @Dog_Rates </button>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
 
 
 
@@ -14587,26 +14607,6 @@ Analyzing And Visualizing The Tweet Archive Of Twitter User @Dog_Rates </button>
       <td>None</td>
       <td>None</td>
     </tr>
-    <tr>
-      <th>2</th>
-      <td>891815181378084864</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2017-07-31 00:18:03 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is Archie. He is a rare Norwegian Pouncin...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/891815181...</td>
-      <td>12</td>
-      <td>10</td>
-      <td>Archie</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
   </tbody>
 </table>
 </div>
@@ -14626,7 +14626,7 @@ Analyzing And Visualizing The Tweet Archive Of Twitter User @Dog_Rates </button>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://d17h27t6h515a5.cloudfront.net/topher/2017/August/599fd2ad_image-predictions/image-predictions.tsv&#39;</span>
@@ -14635,9 +14635,9 @@ Analyzing And Visualizing The Tweet Archive Of Twitter User @Dog_Rates </button>
     <span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
     
 <span class="c1"># Import the tweet image predictions TSV file into a DataFrame</span>
-<span class="n">image</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;image_predictions.tsv&#39;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">)</span>
-<span class="n">image</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;tweet_id&#39;</span><span class="p">)</span>
-<span class="n">image</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">image_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;image_predictions.tsv&#39;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">image_df</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;tweet_id&#39;</span><span class="p">)</span>
+<span class="n">image_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14653,7 +14653,7 @@ Analyzing And Visualizing The Tweet Archive Of Twitter User @Dog_Rates </button>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
 
 
 
@@ -14755,7 +14755,7 @@ Analyzing And Visualizing The Tweet Archive Of Twitter User @Dog_Rates </button>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># These are hidden to comply with Twitter&#39;s API terms and conditions</span>
@@ -14801,10 +14801,10 @@ Analyzing And Visualizing The Tweet Archive Of Twitter User @Dog_Rates </button>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweet_ids</span> <span class="o">=</span> <span class="n">archive</span><span class="o">.</span><span class="n">tweet_id</span><span class="o">.</span><span class="n">values</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweet_ids</span> <span class="o">=</span> <span class="n">archive_df</span><span class="o">.</span><span class="n">tweet_id</span><span class="o">.</span><span class="n">values</span>
 <span class="nb">len</span><span class="p">(</span><span class="n">tweet_ids</span><span class="p">)</span>
 </pre></div>
 
@@ -14821,7 +14821,7 @@ Analyzing And Visualizing The Tweet Archive Of Twitter User @Dog_Rates </button>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
 
 
 
@@ -19608,7 +19608,7 @@ Success
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## read json file to a list array and strip new line charactor</span>
@@ -19626,7 +19626,7 @@ Success
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">temp</span>
@@ -19645,7 +19645,7 @@ Success
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
 
 
 
@@ -19762,7 +19762,7 @@ Success
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># List of dictionaries to read tweet&#39;s JSON data line by line and later convert to a DataFrame</span>
@@ -19793,7 +19793,7 @@ Success
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweet_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
@@ -19812,7 +19812,7 @@ Success
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
 
 
 
@@ -19876,7 +19876,7 @@ Success
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweet_df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;created_at&#39;</span><span class="p">:</span><span class="s1">&#39;timestamp&#39;</span><span class="p">},</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -19897,7 +19897,7 @@ Success
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
 
 
 
@@ -19966,10 +19966,10 @@ Success
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">image</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">image_df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -20024,7 +20024,7 @@ memory usage: 152.1+ KB
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweet_df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>   <span class="c1">#1-place columan almost empty</span>
@@ -20071,7 +20071,7 @@ memory usage: 109.4+ KB
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweet_df</span><span class="o">.</span><span class="n">tweet_id</span> <span class="o">.</span><span class="n">duplicated</span>   <span class="c1"># 2-there is no dublicate in tweeter data frame</span>
@@ -20090,7 +20090,7 @@ memory usage: 109.4+ KB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
 
 
 
@@ -20119,7 +20119,7 @@ Name: tweet_id, Length: 2331, dtype: int64&gt;</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweet_df</span><span class="o">.</span><span class="n">dtypes</span>
@@ -20138,7 +20138,7 @@ Name: tweet_id, Length: 2331, dtype: int64&gt;</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
 
 
 
@@ -20162,10 +20162,10 @@ dtype: object</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">archive</span><span class="o">.</span><span class="n">info</span><span class="p">()</span> <span class="c1">#3-many columan have null value </span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">archive_df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span> <span class="c1">#3-many columan have null value </span>
 </pre></div>
 
      </div>
@@ -20220,10 +20220,10 @@ memory usage: 313.0+ KB
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">name_count</span><span class="o">=</span><span class="n">archive</span><span class="o">.</span><span class="n">name</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span> <span class="c1">#4-there name with just a letter</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">name_count</span><span class="o">=</span><span class="n">archive_df</span><span class="o">.</span><span class="n">name</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>               <span class="c1">#4-there is a name with just &quot;a&quot; letter</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">name_count</span><span class="o">.</span><span class="n">unique</span><span class="p">)</span>
 </pre></div>
 
@@ -20250,11 +20250,11 @@ Charlie     12
 Lucy        11
 Cooper      11
           ... 
-Tedrick      1
-Shikha       1
-Lolo         1
-Marty        1
-Shooter      1
+Rinna        1
+Diogi        1
+Molly        1
+Iggy         1
+Carll        1
 Name: name, Length: 957, dtype: int64&gt;
 </pre>
 </div>
@@ -20267,10 +20267,10 @@ Name: name, Length: 957, dtype: int64&gt;
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">archive</span><span class="o">.</span><span class="n">columns</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">archive_df</span><span class="o">.</span><span class="n">columns</span>
 </pre></div>
 
      </div>
@@ -20286,7 +20286,7 @@ Name: name, Length: 957, dtype: int64&gt;
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[21]:</div>
 
 
 
@@ -20308,10 +20308,10 @@ Name: name, Length: 957, dtype: int64&gt;
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">archive</span><span class="o">.</span><span class="n">dtypes</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">archive_df</span><span class="o">.</span><span class="n">dtypes</span>
 </pre></div>
 
      </div>
@@ -20327,7 +20327,7 @@ Name: name, Length: 957, dtype: int64&gt;
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[21]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
 
 
 
@@ -20362,10 +20362,10 @@ dtype: object</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">archive</span><span class="o">.</span><span class="n">rating_denominator</span> <span class="o">.</span><span class="n">value_counts</span><span class="p">()</span> <span class="c1">#5-there is number not in the rating range(0-10)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">archive_df</span><span class="o">.</span><span class="n">rating_numerator</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>    <span class="c1">#5-there is number not in the rating range(0-10)</span>
 </pre></div>
 
      </div>
@@ -20381,7 +20381,84 @@ dtype: object</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>12      558
+11      464
+10      461
+13      351
+9       158
+8       102
+7        55
+14       54
+5        37
+6        32
+3        19
+4        17
+1         9
+2         9
+420       2
+0         2
+15        2
+75        2
+80        1
+20        1
+24        1
+26        1
+44        1
+50        1
+60        1
+165       1
+84        1
+88        1
+144       1
+182       1
+143       1
+666       1
+960       1
+1776      1
+17        1
+27        1
+45        1
+99        1
+121       1
+204       1
+Name: rating_numerator, dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">archive_df</span><span class="o">.</span><span class="n">rating_denominator</span> <span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>    <span class="c1">#5-there is number not in the rating range(0-10)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[24]:</div>
 
 
 
@@ -20422,13 +20499,13 @@ Name: rating_denominator, dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#copy of the dataframe:</span>
 <span class="n">tweet_df_clean</span><span class="o">=</span><span class="n">tweet_df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-<span class="n">archive_df_clean</span><span class="o">=</span><span class="n">archive</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-<span class="n">image_df_clean</span><span class="o">=</span><span class="n">image</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">archive_df_clean</span><span class="o">=</span><span class="n">archive_df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">image_df_clean</span><span class="o">=</span><span class="n">image_df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -20439,7 +20516,7 @@ Name: rating_denominator, dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweet_df_clean</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
@@ -20458,7 +20535,7 @@ Name: rating_denominator, dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[24]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[26]:</div>
 
 
 
@@ -20513,7 +20590,7 @@ Name: rating_denominator, dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">image_df_clean</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
@@ -20532,7 +20609,7 @@ Name: rating_denominator, dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[25]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[27]:</div>
 
 
 
@@ -20599,7 +20676,7 @@ Name: rating_denominator, dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">archive_df_clean</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
@@ -20618,7 +20695,7 @@ Name: rating_denominator, dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[26]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[28]:</div>
 
 
 
@@ -20700,7 +20777,7 @@ Name: rating_denominator, dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Dropping column with missing value</span>
@@ -20715,7 +20792,7 @@ Name: rating_denominator, dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#view missing value count for tweet_df</span>
@@ -20735,7 +20812,7 @@ Name: rating_denominator, dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[28]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[30]:</div>
 
 
 
@@ -20758,12 +20835,12 @@ dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># explore data with name a</span>
 <span class="n">archive_df_clean_v2</span><span class="o">=</span><span class="n">archive_df_clean</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">archive_df_clean</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span> <span class="o">==</span><span class="s1">&#39;a&#39;</span><span class="p">]</span>
-<span class="n">archive_df_clean_v2</span>
+<span class="n">archive_df_clean_v2</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -20779,7 +20856,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[29]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[31]:</div>
 
 
 
@@ -20862,1066 +20939,6 @@ dtype: int64</pre>
       <td>None</td>
       <td>None</td>
     </tr>
-    <tr>
-      <th>801</th>
-      <td>772581559778025472</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2016-09-04 23:46:12 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>Guys this is getting so out of hand. We only r...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/772581559...</td>
-      <td>10</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>1002</th>
-      <td>747885874273214464</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2016-06-28 20:14:22 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is a mighty rare blue-tailed hammer sherk...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/747885874...</td>
-      <td>8</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>1004</th>
-      <td>747816857231626240</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2016-06-28 15:40:07 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>Viewer discretion is advised. This is a terrib...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/747816857...</td>
-      <td>4</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>1017</th>
-      <td>746872823977771008</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2016-06-26 01:08:52 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is a carrot. We only rate dogs. Please on...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/746872823...</td>
-      <td>11</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>1049</th>
-      <td>743222593470234624</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2016-06-15 23:24:09 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is a very rare Great Alaskan Bush Pupper....</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/743222593...</td>
-      <td>12</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>pupper</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>1193</th>
-      <td>717537687239008257</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2016-04-06 02:21:30 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>People please. This is a Deadly Mediterranean ...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/717537687...</td>
-      <td>11</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>1207</th>
-      <td>715733265223708672</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2016-04-01 02:51:22 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is a taco. We only rate dogs. Please only...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/715733265...</td>
-      <td>10</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>1340</th>
-      <td>704859558691414016</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2016-03-02 02:43:09 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>Here is a heartbreaking scene of an incredible...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/704859558...</td>
-      <td>10</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>pupper</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>1351</th>
-      <td>704054845121142784</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2016-02-28 21:25:30 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>Here is a whole flock of puppers.  60/50 I'll ...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/704054845...</td>
-      <td>60</td>
-      <td>50</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>1361</th>
-      <td>703079050210877440</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2016-02-26 04:48:02 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is a Butternut Cumberfloof. It's not wind...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/703079050...</td>
-      <td>11</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>1368</th>
-      <td>702539513671897089</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2016-02-24 17:04:07 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is a Wild Tuscan Poofwiggle. Careful not ...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/702539513...</td>
-      <td>12</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>1382</th>
-      <td>700864154249383937</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2016-02-20 02:06:50 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>"Pupper is a present to world. Here is a bow f...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/700864154...</td>
-      <td>12</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>pupper</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>1499</th>
-      <td>692187005137076224</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2016-01-27 03:26:56 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is a rare Arctic Wubberfloof. Unamused by...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/692187005...</td>
-      <td>12</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>1737</th>
-      <td>679530280114372609</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2015-12-23 05:13:38 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>Guys this really needs to stop. We've been ove...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/679530280...</td>
-      <td>7</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>1785</th>
-      <td>677644091929329666</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2015-12-18 00:18:36 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is a dog swinging. I really enjoyed it so...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/677644091...</td>
-      <td>11</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>1853</th>
-      <td>675706639471788032</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2015-12-12 15:59:51 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is a Sizzlin Menorah spaniel from Brookly...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/675706639...</td>
-      <td>10</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>1854</th>
-      <td>675534494439489536</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2015-12-12 04:35:48 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>Seriously guys?! Only send in dogs. I only rat...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/675534494...</td>
-      <td>11</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>1877</th>
-      <td>675109292475830276</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2015-12-11 00:26:12 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>C'mon guys. We've been over this. We only rate...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/675109292...</td>
-      <td>9</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>1878</th>
-      <td>675047298674663426</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2015-12-10 20:19:52 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is a fluffy albino Bacardi Columbia mix. ...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/675047298...</td>
-      <td>11</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>1923</th>
-      <td>674082852460433408</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2015-12-08 04:27:30 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is a Sagitariot Baklava mix. Loves her ne...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/674082852...</td>
-      <td>11</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>1941</th>
-      <td>673715861853720576</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2015-12-07 04:09:13 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is a heavily opinionated dog. Loves walls...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/673715861...</td>
-      <td>4</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>1955</th>
-      <td>673636718965334016</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2015-12-06 22:54:44 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is a Lofted Aphrodisiac Terrier named Kip...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/673636718...</td>
-      <td>10</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>1994</th>
-      <td>672604026190569472</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2015-12-04 02:31:10 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is a baby Rand Paul. Curls for days. 11/1...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/672604026...</td>
-      <td>11</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>2034</th>
-      <td>671743150407421952</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2015-12-01 17:30:22 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is a Tuscaloosa Alcatraz named Jacob (Yac...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/671743150...</td>
-      <td>11</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>2066</th>
-      <td>671147085991960577</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2015-11-30 02:01:49 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is a Helvetica Listerine named Rufus. Thi...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/671147085...</td>
-      <td>9</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>2116</th>
-      <td>670427002554466305</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2015-11-28 02:20:27 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is a Deciduous Trimester mix named Spork....</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/670427002...</td>
-      <td>9</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>2125</th>
-      <td>670361874861563904</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2015-11-27 22:01:40 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is a Rich Mahogany Seltzer named Cherokee...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/670361874...</td>
-      <td>9</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>2128</th>
-      <td>670303360680108032</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2015-11-27 18:09:09 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is a Speckled Cauliflower Yosemite named ...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/670303360...</td>
-      <td>9</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>2146</th>
-      <td>669923323644657664</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2015-11-26 16:59:01 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is a spotted Lipitor Rumpelstiltskin name...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/669923323...</td>
-      <td>10</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>2153</th>
-      <td>669661792646373376</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2015-11-25 23:39:47 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is a brave dog. Excellent free climber. T...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/669661792...</td>
-      <td>5</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>2161</th>
-      <td>669564461267722241</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2015-11-25 17:13:02 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is a Coriander Baton Rouge named Alfredo....</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/669564461...</td>
-      <td>10</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>2191</th>
-      <td>668955713004314625</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2015-11-24 00:54:05 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is a Slovakian Helter Skelter Feta named ...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/668955713...</td>
-      <td>10</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>2198</th>
-      <td>668815180734689280</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2015-11-23 15:35:39 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is a wild Toblerone from Papua New Guinea...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/668815180...</td>
-      <td>7</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>2211</th>
-      <td>668614819948453888</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2015-11-23 02:19:29 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>Here is a horned dog. Much grace. Can jump ove...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/668614819...</td>
-      <td>7</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>2218</th>
-      <td>668507509523615744</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2015-11-22 19:13:05 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is a Birmingham Quagmire named Chuk. Love...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/668507509...</td>
-      <td>10</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>2222</th>
-      <td>668466899341221888</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2015-11-22 16:31:42 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>Here is a mother dog caring for her pups. Snaz...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/668466899...</td>
-      <td>4</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>2235</th>
-      <td>668171859951755264</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2015-11-21 20:59:20 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is a Trans Siberian Kellogg named Alfonso...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/668171859...</td>
-      <td>7</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>2249</th>
-      <td>667861340749471744</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2015-11-21 00:25:26 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is a Shotokon Macadamia mix named Cheryl....</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/667861340...</td>
-      <td>9</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>2255</th>
-      <td>667773195014021121</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2015-11-20 18:35:10 +0000</td>
-      <td>&lt;a href="http://twitter.com" rel="nofollow"&gt;Tw...</td>
-      <td>This is a rare Hungarian Pinot named Jessiga. ...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/667773195...</td>
-      <td>8</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>2264</th>
-      <td>667538891197542400</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2015-11-20 03:04:08 +0000</td>
-      <td>&lt;a href="http://twitter.com" rel="nofollow"&gt;Tw...</td>
-      <td>This is a southwest Coriander named Klint. Hat...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/667538891...</td>
-      <td>9</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>2273</th>
-      <td>667470559035432960</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2015-11-19 22:32:36 +0000</td>
-      <td>&lt;a href="http://twitter.com" rel="nofollow"&gt;Tw...</td>
-      <td>This is a northern Wahoo named Kohl. He runs t...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/667470559...</td>
-      <td>11</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>2287</th>
-      <td>667177989038297088</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2015-11-19 03:10:02 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is a Dasani Kingfisher from Maine. His na...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/667177989...</td>
-      <td>8</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>2304</th>
-      <td>666983947667116034</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2015-11-18 14:18:59 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is a curly Ticonderoga named Pepe. No fee...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/666983947...</td>
-      <td>11</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>2311</th>
-      <td>666781792255496192</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2015-11-18 00:55:42 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is a purebred Bacardi named Octaviath. Ca...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/666781792...</td>
-      <td>10</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>2314</th>
-      <td>666701168228331520</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2015-11-17 19:35:19 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is a golden Buckminsterfullerene named Jo...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/666701168...</td>
-      <td>8</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>2327</th>
-      <td>666407126856765440</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2015-11-17 00:06:54 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is a southern Vesuvius bumblegruff. Can d...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/666407126...</td>
-      <td>7</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>2334</th>
-      <td>666293911632134144</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2015-11-16 16:37:02 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is a funny dog. Weird toes. Won't come do...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/666293911...</td>
-      <td>3</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>2347</th>
-      <td>666057090499244032</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2015-11-16 00:55:59 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>My oh my. This is a rare blond Canadian terrie...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/666057090...</td>
-      <td>9</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>2348</th>
-      <td>666055525042405380</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2015-11-16 00:49:46 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>Here is a Siberian heavily armored polar bear ...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/666055525...</td>
-      <td>10</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>2350</th>
-      <td>666050758794694657</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2015-11-16 00:30:50 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is a truly beautiful English Wilson Staff...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/666050758...</td>
-      <td>10</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>2352</th>
-      <td>666044226329800704</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2015-11-16 00:04:52 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is a purebred Piers Morgan. Loves to Netf...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/666044226...</td>
-      <td>6</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>2353</th>
-      <td>666033412701032449</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2015-11-15 23:21:54 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>Here is a very happy pup. Big fan of well-main...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/666033412...</td>
-      <td>9</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>2354</th>
-      <td>666029285002620928</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2015-11-15 23:05:30 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is a western brown Mitsubishi terrier. Up...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/666029285...</td>
-      <td>7</td>
-      <td>10</td>
-      <td>a</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
   </tbody>
 </table>
 </div>
@@ -21936,12 +20953,12 @@ dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#raplace a with name &quot;apple&quot; so we not lost mush more data </span>
 <span class="n">archive_df_clean</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">archive_df_clean</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;APPLE&#39;</span>
-<span class="n">archive_df_clean</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<span class="n">archive_df_clean</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -21957,7 +20974,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[30]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[32]:</div>
 
 
 
@@ -22040,66 +21057,6 @@ dtype: int64</pre>
       <td>None</td>
       <td>None</td>
     </tr>
-    <tr>
-      <th>2</th>
-      <td>891815181378084864</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2017-07-31 00:18:03 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is Archie. He is a rare Norwegian Pouncin...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/891815181...</td>
-      <td>12</td>
-      <td>10</td>
-      <td>Archie</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>891689557279858688</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2017-07-30 15:58:51 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is Darla. She commenced a snooze mid meal...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/891689557...</td>
-      <td>13</td>
-      <td>10</td>
-      <td>Darla</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>891327558926688256</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2017-07-29 16:00:24 +0000</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is Franklin. He would like you to stop ca...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>https://twitter.com/dog_rates/status/891327558...</td>
-      <td>12</td>
-      <td>10</td>
-      <td>Franklin</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
   </tbody>
 </table>
 </div>
@@ -22114,7 +21071,7 @@ dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[33]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">name_count</span><span class="o">=</span><span class="n">archive_df_clean</span><span class="o">.</span><span class="n">name</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span> <span class="c1">#6-after replace &quot;a&quot;with &quot;apple&quot;</span>
@@ -22144,11 +21101,11 @@ Charlie     12
 Lucy        11
 Cooper      11
           ... 
-Ginger       1
-Rudy         1
-Sparky       1
-Buddah       1
-Shooter      1
+Rinna        1
+Diogi        1
+Molly        1
+Iggy         1
+Carll        1
 Name: name, Length: 957, dtype: int64&gt;
 </pre>
 </div>
@@ -22161,7 +21118,7 @@ Name: name, Length: 957, dtype: int64&gt;
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[34]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># view missing value count for archive </span>
@@ -22181,7 +21138,7 @@ Name: name, Length: 957, dtype: int64&gt;
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[32]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[34]:</div>
 
 
 
@@ -22216,7 +21173,7 @@ dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[33]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[35]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">archive_df_clean</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;retweeted_status_id&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>    <span class="c1">#7-drop empty column</span>
@@ -22234,7 +21191,257 @@ dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[34]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[36]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">archive_df_clean</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[36]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>tweet_id              2356
+timestamp             2356
+source                2356
+text                  2356
+expanded_urls         2297
+rating_numerator      2356
+rating_denominator    2356
+name                  2356
+doggo                 2356
+floofer               2356
+pupper                2356
+puppo                 2356
+dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[37]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">archive_df_clean</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[37]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>tweet_id</th>
+      <th>timestamp</th>
+      <th>source</th>
+      <th>text</th>
+      <th>expanded_urls</th>
+      <th>rating_numerator</th>
+      <th>rating_denominator</th>
+      <th>name</th>
+      <th>doggo</th>
+      <th>floofer</th>
+      <th>pupper</th>
+      <th>puppo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>892420643555336193</td>
+      <td>2017-08-01 16:23:56 +0000</td>
+      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
+      <td>This is Phineas. He's a mystical boy. Only eve...</td>
+      <td>https://twitter.com/dog_rates/status/892420643...</td>
+      <td>13</td>
+      <td>10</td>
+      <td>Phineas</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>892177421306343426</td>
+      <td>2017-08-01 00:17:27 +0000</td>
+      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
+      <td>This is Tilly. She's just checking pup on you....</td>
+      <td>https://twitter.com/dog_rates/status/892177421...</td>
+      <td>13</td>
+      <td>10</td>
+      <td>Tilly</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[38]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#raplace a with name &quot;rating_numerator&quot; with mean </span>
+<span class="n">archive_df_clean</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">archive_df_clean</span><span class="p">[</span><span class="s1">&#39;rating_numerator&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">13</span> <span class="p">,</span> <span class="s1">&#39;rating_numerator&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">13</span>
+<span class="n">archive_df_clean</span><span class="o">.</span><span class="n">rating_numerator</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[38]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>12    558
+11    464
+10    461
+13    433
+9     158
+8     102
+7      55
+5      37
+6      32
+3      19
+4      17
+1       9
+2       9
+0       2
+Name: rating_numerator, dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[39]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#raplace a with name &quot;rating_denominator&quot; with mean </span>
+<span class="n">archive_df_clean</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">archive_df_clean</span><span class="p">[</span><span class="s1">&#39;rating_denominator&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">20</span><span class="p">,</span> <span class="s1">&#39;rating_denominator&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">archive_df_clean</span><span class="o">.</span><span class="n">rating_denominator</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[39]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>10    2346
+11       3
+20       2
+15       1
+7        1
+16       1
+2        1
+0        1
+Name: rating_denominator, dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[40]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># view missing value count for archive</span>
@@ -22254,7 +21461,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[34]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[40]:</div>
 
 
 
@@ -22284,10 +21491,10 @@ dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[35]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[41]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">archive</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">archive_df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -22303,7 +21510,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[35]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[41]:</div>
 
 
 
@@ -22430,7 +21637,7 @@ dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[36]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[42]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">archive_df_clean</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>  <span class="c1"># 8 -data for rating_numerator	rating_denominator didnot change after cleaning</span>
@@ -22449,7 +21656,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[36]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[42]:</div>
 
 
 
@@ -22487,14 +21694,14 @@ dtype: int64</pre>
     <tr>
       <th>mean</th>
       <td>7.427716e+17</td>
-      <td>13.126486</td>
-      <td>10.455433</td>
+      <td>10.692275</td>
+      <td>10.005518</td>
     </tr>
     <tr>
       <th>std</th>
       <td>6.856705e+16</td>
-      <td>45.876648</td>
-      <td>6.745237</td>
+      <td>2.162202</td>
+      <td>0.430734</td>
     </tr>
     <tr>
       <th>min</th>
@@ -22523,8 +21730,8 @@ dtype: int64</pre>
     <tr>
       <th>max</th>
       <td>8.924206e+17</td>
-      <td>1776.000000</td>
-      <td>170.000000</td>
+      <td>13.000000</td>
+      <td>20.000000</td>
     </tr>
   </tbody>
 </table>
@@ -22540,7 +21747,7 @@ dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[37]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[43]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#explore expanded_urls value</span>
@@ -22560,7 +21767,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[37]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[43]:</div>
 
 
 
@@ -22585,7 +21792,7 @@ dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[38]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[44]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># view missing value count for image</span>
@@ -22605,7 +21812,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[38]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[44]:</div>
 
 
 
@@ -22635,7 +21842,7 @@ dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[39]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[45]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">image_df_clean</span><span class="o">.</span><span class="n">value_counts</span>
@@ -22654,7 +21861,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[39]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[45]:</div>
 
 
 
@@ -22716,7 +21923,7 @@ dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[40]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[46]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">archive_df_clean</span><span class="o">.</span><span class="n">shape</span>
@@ -22735,7 +21942,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[40]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[46]:</div>
 
 
 
@@ -22753,7 +21960,7 @@ dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[41]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[47]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">archive_df_clean</span><span class="o">.</span><span class="n">columns</span>
@@ -22772,7 +21979,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[41]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[47]:</div>
 
 
 
@@ -22793,7 +22000,7 @@ dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[42]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[48]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweet_df_clean</span><span class="o">.</span><span class="n">shape</span>
@@ -22812,7 +22019,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[42]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[48]:</div>
 
 
 
@@ -22830,7 +22037,7 @@ dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[43]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[49]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweet_df_clean</span><span class="o">.</span><span class="n">columns</span>
@@ -22849,7 +22056,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[43]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[49]:</div>
 
 
 
@@ -22869,11 +22076,11 @@ dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[44]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[50]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">archive_df_clean</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;timestamp&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">archive_df_clean</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<span class="n">archive_df_clean</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -22889,7 +22096,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[44]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[50]:</div>
 
 
 
@@ -22968,34 +22175,6 @@ dtype: int64</pre>
       <td>None</td>
       <td>None</td>
     </tr>
-    <tr>
-      <th>3</th>
-      <td>891689557279858688</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is Darla. She commenced a snooze mid meal...</td>
-      <td>https://twitter.com/dog_rates/status/891689557...</td>
-      <td>13</td>
-      <td>10</td>
-      <td>Darla</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>891327558926688256</td>
-      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
-      <td>This is Franklin. He would like you to stop ca...</td>
-      <td>https://twitter.com/dog_rates/status/891327558...</td>
-      <td>12</td>
-      <td>10</td>
-      <td>Franklin</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-      <td>None</td>
-    </tr>
   </tbody>
 </table>
 </div>
@@ -23010,13 +22189,13 @@ dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[45]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[51]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># marge tweet_df_clean and archive_df_clean</span>
 <span class="n">tweet_df_merge</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">archive_df_clean</span><span class="p">,</span> <span class="n">tweet_df_clean</span> <span class="p">,</span><span class="n">on</span><span class="o">=</span><span class="s1">&#39;tweet_id&#39;</span><span class="p">)</span>
 <span class="n">tweet_df_merge</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;tweet_id&#39;</span><span class="p">)</span>
-<span class="n">tweet_df_merge</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">tweet_df_merge</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -23032,7 +22211,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[45]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[51]:</div>
 
 
 
@@ -23091,6 +22270,42 @@ dtype: int64</pre>
       <td>35521</td>
       <td>[0, 85]</td>
     </tr>
+    <tr>
+      <th>1</th>
+      <td>892177421306343426</td>
+      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
+      <td>This is Tilly. She's just checking pup on you....</td>
+      <td>https://twitter.com/dog_rates/status/892177421...</td>
+      <td>13</td>
+      <td>10</td>
+      <td>Tilly</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Tue Aug 01 00:17:27 +0000 2017</td>
+      <td>5574</td>
+      <td>30744</td>
+      <td>[0, 138]</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>891815181378084864</td>
+      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
+      <td>This is Archie. He is a rare Norwegian Pouncin...</td>
+      <td>https://twitter.com/dog_rates/status/891815181...</td>
+      <td>12</td>
+      <td>10</td>
+      <td>Archie</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Mon Jul 31 00:18:03 +0000 2017</td>
+      <td>3690</td>
+      <td>23113</td>
+      <td>[0, 121]</td>
+    </tr>
   </tbody>
 </table>
 </div>
@@ -23105,7 +22320,7 @@ dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[46]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[52]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweet_df_merge</span><span class="o">.</span><span class="n">shape</span>
@@ -23124,7 +22339,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[46]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[52]:</div>
 
 
 
@@ -23142,7 +22357,7 @@ dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[47]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[53]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweet_df_merge</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
@@ -23161,7 +22376,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[47]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[53]:</div>
 
 
 
@@ -23203,16 +22418,16 @@ dtype: int64</pre>
     <tr>
       <th>mean</th>
       <td>7.419079e+17</td>
-      <td>13.134706</td>
-      <td>10.459888</td>
+      <td>10.675676</td>
+      <td>10.005148</td>
       <td>2642.187044</td>
       <td>7423.742600</td>
     </tr>
     <tr>
       <th>std</th>
       <td>6.823170e+16</td>
-      <td>46.121847</td>
-      <td>6.781159</td>
+      <td>2.164363</td>
+      <td>0.432548</td>
       <td>4468.239152</td>
       <td>11527.811718</td>
     </tr>
@@ -23251,8 +22466,8 @@ dtype: int64</pre>
     <tr>
       <th>max</th>
       <td>8.924206e+17</td>
-      <td>1776.000000</td>
-      <td>170.000000</td>
+      <td>13.000000</td>
+      <td>20.000000</td>
       <td>75918.000000</td>
       <td>153240.000000</td>
     </tr>
@@ -23270,7 +22485,7 @@ dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[48]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[54]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweet_df_merge</span><span class="o">.</span><span class="n">tweet_id</span> <span class="o">.</span><span class="n">duplicated</span>
@@ -23289,7 +22504,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[48]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[54]:</div>
 
 
 
@@ -23318,7 +22533,7 @@ Name: tweet_id, Length: 2331, dtype: int64&gt;</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[49]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[55]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweet_df_merge</span><span class="o">.</span><span class="n">doggo</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
@@ -23337,7 +22552,7 @@ Name: tweet_id, Length: 2331, dtype: int64&gt;</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[49]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[55]:</div>
 
 
 
@@ -23357,7 +22572,7 @@ Name: doggo, dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[50]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[56]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweet_df_merge</span><span class="o">.</span><span class="n">floofer</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
@@ -23376,7 +22591,7 @@ Name: doggo, dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[50]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[56]:</div>
 
 
 
@@ -23396,7 +22611,7 @@ Name: floofer, dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[51]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[57]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweet_df_merge</span><span class="o">.</span><span class="n">pupper</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
@@ -23415,7 +22630,7 @@ Name: floofer, dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[51]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[57]:</div>
 
 
 
@@ -23435,7 +22650,7 @@ Name: pupper, dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[52]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[58]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweet_df_merge</span><span class="o">.</span><span class="n">puppo</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
@@ -23454,7 +22669,7 @@ Name: pupper, dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[52]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[58]:</div>
 
 
 
@@ -23474,7 +22689,7 @@ Name: puppo, dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[53]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[59]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">cols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;doggo&#39;</span><span class="p">,</span> <span class="s1">&#39;floofer&#39;</span><span class="p">,</span> <span class="s1">&#39;pupper&#39;</span><span class="p">,</span> <span class="s1">&#39;puppo&#39;</span><span class="p">]</span>
@@ -23500,7 +22715,7 @@ Name: puppo, dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[53]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[59]:</div>
 
 
 
@@ -23582,7 +22797,7 @@ Name: puppo, dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[54]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[60]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweet_df_merge</span><span class="o">.</span><span class="n">stages_of_dog</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
@@ -23601,7 +22816,7 @@ Name: puppo, dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[54]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[60]:</div>
 
 
 
@@ -23613,8 +22828,8 @@ doggo_None_None_None         80
 None_None_None_puppo         29
 doggo_None_pupper_None       12
 None_floofer_None_None        9
-doggo_floofer_None_None       1
 doggo_None_None_puppo         1
+doggo_floofer_None_None       1
 Name: stages_of_dog, dtype: int64</pre>
 </div>
 
@@ -23627,12 +22842,12 @@ Name: stages_of_dog, dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[55]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[61]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#raplace None_None_None_None with stages_of_dog &quot;&quot; </span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#raplace None_None_None_None with stages_of_dog &quot;None&quot; </span>
 <span class="n">tweet_df_mergev2</span><span class="o">=</span><span class="n">tweet_df_merge</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-<span class="n">tweet_df_mergev2</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">tweet_df_mergev2</span><span class="p">[</span><span class="s1">&#39;stages_of_dog&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;None_None_None_None&#39;</span><span class="p">,</span> <span class="s1">&#39;stages_of_dog&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+<span class="n">tweet_df_mergev2</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">tweet_df_mergev2</span><span class="p">[</span><span class="s1">&#39;stages_of_dog&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;None_None_None_None&#39;</span><span class="p">,</span> <span class="s1">&#39;stages_of_dog&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;None&quot;</span>
 <span class="n">tweet_df_mergev2</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">tweet_df_mergev2</span><span class="p">[</span><span class="s1">&#39;stages_of_dog&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;doggo_None_None_None&#39;</span><span class="p">,</span> <span class="s1">&#39;stages_of_dog&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;doggo&#39;</span>
 <span class="n">tweet_df_mergev2</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">tweet_df_mergev2</span><span class="p">[</span><span class="s1">&#39;stages_of_dog&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;None_None_pupper_None&#39;</span><span class="p">,</span> <span class="s1">&#39;stages_of_dog&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;pupper&#39;</span>
 <span class="n">tweet_df_mergev2</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">tweet_df_mergev2</span><span class="p">[</span><span class="s1">&#39;stages_of_dog&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;doggo_None_pupper_None&#39;</span><span class="p">,</span> <span class="s1">&#39;stages_of_dog&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;pupper&#39;</span> <span class="c1">#choose the oldest</span>
@@ -23657,13 +22872,13 @@ Name: stages_of_dog, dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[55]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[61]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>           1956
+<pre>None       1956
 pupper      255
 doggo        80
 puppo        30
@@ -23680,16 +22895,296 @@ Name: stages_of_dog, dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[57]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[62]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># plot stages_of_dog</span>
-<span class="n">stages</span><span class="o">=</span><span class="n">tweet_df_mergev2</span><span class="p">[</span><span class="s1">&#39;stages_of_dog&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;barh&#39;</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span> <span class="n">legend</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
-<span class="n">stages</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;stages_of_dog&quot;</span><span class="p">)</span>
-<span class="n">stages</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Number_of_dog&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweet_df_mergev2</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[62]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>tweet_id               0
+source                 0
+text                   0
+expanded_urls         59
+rating_numerator       0
+rating_denominator     0
+name                   0
+timestamp              0
+retweet_count          0
+favorite_count         0
+display_text_range     0
+stages_of_dog          0
+dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[63]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Popularity_of_dog</span>
+<span class="n">Popularity_of_dog</span><span class="o">=</span><span class="n">pivot</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">tweet_df_mergev2</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;retweet_count&#39;</span><span class="p">,</span><span class="s1">&#39;favorite_count&#39;</span><span class="p">),</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;stages_of_dog&#39;</span><span class="p">],</span> <span class="n">aggfunc</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">count_nonzero</span><span class="p">)</span>
+<span class="n">Popularity_of_dog</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[63]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>favorite_count</th>
+      <th>retweet_count</th>
+    </tr>
+    <tr>
+      <th>stages_of_dog</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>None</th>
+      <td>1825</td>
+      <td>1956</td>
+    </tr>
+    <tr>
+      <th>doggo</th>
+      <td>74</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <th>floofer</th>
+      <td>10</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th>pupper</th>
+      <td>234</td>
+      <td>255</td>
+    </tr>
+    <tr>
+      <th>puppo</th>
+      <td>25</td>
+      <td>30</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[64]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Popularity_of_dog to csv </span>
+<span class="n">Popularity_of_dog</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;Popularity_of_dog.csv&#39;</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">Popularity_of_dog_df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;Popularity_of_dog.csv&#39;</span><span class="p">)</span>
+<span class="n">Popularity_of_dog_df</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[64]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>stages_of_dog</th>
+      <th>favorite_count</th>
+      <th>retweet_count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>None</td>
+      <td>1825</td>
+      <td>1956</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>doggo</td>
+      <td>74</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>floofer</td>
+      <td>10</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>pupper</td>
+      <td>234</td>
+      <td>255</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>puppo</td>
+      <td>25</td>
+      <td>30</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[65]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># clean and arenge </span>
+<span class="n">Popularity_of_dog_df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">Popularity_of_dog_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">Popularity_of_dog_df</span><span class="p">[</span><span class="s1">&#39;stages_of_dog&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;None&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">index</span> <span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">df</span><span class="o">=</span><span class="n">Popularity_of_dog_df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">([</span><span class="s1">&#39;favorite_count&#39;</span><span class="p">,</span> <span class="s1">&#39;retweet_count&#39;</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">])</span>
+<span class="n">df</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">index</span><span class="o">=</span> <span class="p">[</span><span class="s1">&#39;doggo&#39;</span><span class="p">,</span> <span class="s1">&#39;floofer&#39;</span><span class="p">,</span> <span class="s1">&#39;pupper&#39;</span><span class="p">,</span> <span class="s1">&#39;puppo&#39;</span><span class="p">]</span>
+<span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="o">=</span><span class="n">index</span>
+<span class="n">df</span><span class="o">.</span><span class="n">index</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[65]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>Index([&#39;doggo&#39;, &#39;floofer&#39;, &#39;pupper&#39;, &#39;puppo&#39;], dtype=&#39;object&#39;)</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[66]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ax</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;barh&#39;</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span> <span class="n">legend</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span> 
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;stages_of_dog&quot;</span><span class="p">)</span> 
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Popularity_of_dog&quot;</span><span class="p">)</span>
+
 <span class="n">plt</span><span class="o">.</span><span class="n">IndexLocator</span> 
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">((</span><span class="s2">&quot;stages_of_dog&quot;</span><span class="p">))</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">((</span><span class="s2">&quot;Popularity_of_dog_stage&quot;</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;Popularity_of_dog.png&#39;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -23711,7 +23206,7 @@ Name: stages_of_dog, dtype: int64</pre>
 
 
 <div class="jp-RenderedImage jp-OutputArea-output ">
-<img src="data:image/png;base64,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pf0XL16cK6+8cparmpxACQAALDjjHCjf8pa35Oyzz86ZZ54536Wsl0AJAABs1K699tosXbo097jHPXK3u90tL3vZy3LFFVfk/ve/f+5///snSZ7+9KdnyZIl2XfffXPCCSf88dizzz47e++9dw4++OAcd9xxedjDHvbHPp/0pCflXve6Vw444IB87GMfS5JcfPHFOeigg7L//vtnv/32y49+9KO11vX6178+d7vb3XK3u90tp5xySpLkaU97WlasWJFHPOIR+ed//udJj1u5cmUe9KAH5YADDsixxx6b1to6+0ySV7ziFdl7773z53/+5zniiCPyute9rutnOZHPUAIAABu1T3/609l5552zbNngs5urVq3K6aefni996UvZcccdkyQnnXRStt9++6xevTqHHXZYLrroouy111459thjc84552SPPfbIEUcc8cc+TzrppDzgAQ/Iu971rvz617/OQQcdlAc+8IE59dRT8+xnPztHHnlkfve732X16tWT1nT++efn9NNPzze+8Y201nLve98797vf/XLqqafm05/+9E1qm+hlL3tZDj744Lz0pS/NsmXLctppp62zz9WrV+fDH/5wLrzwwtx444058MADc8973nNGfrZmKAEAgI3a3e9+93z+85/PC1/4wpx77rnZdtttb7bPBz/4wRx44IE54IADcvHFF+e73/1uvv/972fPPffMHnvskSQ3CZSf/exnc/LJJ2f//ffPoYcemuuvvz4//elPc5/73CevetWr8prXvCaXXnppttxyy0lrOu+88/LoRz86W221Vbbeeus85jGPybnnnjul13POOefkCU94QpJk6dKl2W677dbZ53nnnZdHPvKR2XLLLbPNNtvk4Q9/+LR+futihhIAANio7bXXXjn//PNz9tln5/jjj8+DHvSgm7T/5Cc/yete97p885vfzHbbbZejjjoq119//U2Wkk7UWsuHP/zh3OUud7nJ9n322Sf3vve9s2zZsjz4wQ/OO97xjjzgAQ+Y9PgNMdl3Rq6tzw19rnURKAEAgDk111/zccUVV2T77bfPE57whGy99dY544wzss022+Tqq6/OjjvumN/85jfZaqutsu222+YXv/hFPvWpT+XQQw/N3nvvnRUrVuSSSy7J4sWLc9ZZZ/2xzwc/+MF505velDe96U2pqlx44YU54IADsmLFiuy555457rjjsmLFilx00UWTBspDDjkkRx11VF70oheltZaPfvSjee973zul13PIIYfkzDPPzItf/OJ86lOfyq9+9at19nnjjTfm2GOPzfHHH58bb7wxy5Yty1Of+tQZ+dkKlAAAwEbtO9/5Tp7//Odnk002yeabb563vvWt+drXvpbDDz88O+20U770pS/lgAMOyL777ps999wz973vfZMkW265Zd7ylrfkIQ95SHbcccccdNBBf+zzJS95SZ7znOdkv/32S2stixcvzic/+cmcddZZed/73pfNN988d7jDHfLSl7500poOPPDAHHXUUX/s8ylPeUoOOOCAKb2eE044IUcccUQOPPDA3O9+98tuu+223j4f8YhH5B73uEd23333LFmyZNJlvz1qNqc/NwZLlixpy5cvn+8yAADgFut73/te9tlnn/kuo8s111yTrbfeOq21POMZz8id73znPPe5z53vsqZtzeu47rrrcsghh+S0007LgQceeLP9Jhurqjq/tbZksn5dlAcAAGAt3v72t2f//ffPvvvum1WrVuXYY4+d75K6HHPMMdl///1z4IEH5rGPfeykYbKHGcr1MEMJAAAb5pY8Q7mhVq5cmcMOO+xm27/whS9khx12WOexp59+et7whjfcZNt973vfvPnNb57RGkdNd4bSZygBAIBZ11qb9MqkG7sddtgh3/rWt7qOPfroo3P00UfPbEHr0DPZaMkrAAAwqxYtWpSVK1fO6tdXsGFaa1m5cmUWLVo0rePMUAIAALNq1113zeWXX55f/vKX810K67Bo0aLsuuuu0zpGoAQAAGbV5ptvnj322GO+y2AWWPIKAABAFzOU6/Gdn63K4hct++PjS05eOo/VAAAAjA8zlAAAAHQRKAEAAOgiUAIAANBFoAQAAKCLQAkAAEAXgRIAAIAuAiUAAABdBEoAAAC6CJQAAAB0ESgBAADoIlACAADQRaAEAACgi0AJAABAF4ESAACALgIlAAAAXQRKAAAAugiUAAAAdBEoAQAA6CJQAgAA0EWgBAAAoItACQAAQBeBEgAAgC4CJQAAAF3mNFBW1V2q6sKqurqqrqqqV85An7evqnOGff7TTNQJAADA+m02x8/3giRfbq0dUFVnzFCfxyS5MsltWmtthvoEAABgPeZ6yevuSS6ehT6/2xMmq2quAzUAAMBGY84CZVV9Mcn9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
+<img src="data:image/png;base64,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JQAAAJ0IlAAAAHQiUAIAANCJQAkAAEAnAiUAAACdCJQAAAB0IlACAADQiUAJAABAJwIlAAAAnQiUAAAAdCJQAgAA0IlACQAAQCcCJQAAAJ0IlAAAAHQiUAIAANDJpPEuAAAAWHo98sgjue222/LQQw+NdykMYaWVVspGG22UFVZYYdjbCJQAAMCYue2227LaaqtlypQpqarxLoeFaK3lnnvuyW233ZZNN9102NuZ8goAAIyZhx56KOuss44wOcFVVdZZZ50RjyQLlAAAwJgSJpcMXX5PAiUAAACduIYSAABYbKa89/xR7W/2sXuNan+MjEA5hC03XCMznaQAALDEOuGEE/LZz34222yzTU4//fRR73/mzJn50pe+lBNOOCGXXHJJnva0p2XHHXcc9f08VbNnz86PfvSjvOENbxi1PgVKAABgqfaZz3wm3/nOd0Z099LhevTRRzN9+vRMnz49SXLJJZdk8uTJEzZQnnHGGaMaKF1DCQAALLUOPfTQ3HzzzXn5y1+e4447LjvuuGO23nrr7LjjjrnxxhuTJNttt12uu+66J7bZddddM2vWrMyZMyf77rtvpk6dmu233z7XXnttkmTGjBk5+OCDs8cee+SNb3xjLrnkkuy9996ZPXt2TjrppHzyk5/MtGnT8sMf/jB33XVXXv3qV2fbbbfNtttum8svv3yhtc6bNy8HHnhgttxyy0ydOjXnnntukuTMM8/MlltumS222CLvec97nlh/8uTJTzw/55xzcsABByRJDjjggBx++OHZcccd86xnPSvnnHNOkuS9731vfvjDH2batGn55Cc/OSrvrxFKAABgqXXSSSflggsuyMUXX5ynPe1pecc73pFJkybloosuyvve976ce+65ed3rXpezzz47H/jAB3LnnXfmjjvuyAte8IK85S1vydZbb52vf/3r+f73v583vvGNueaaa5Iks2bNymWXXZaVV145l1xySZJkypQpOfTQQzN58uS8853vTJK84Q1vyNvf/va86EUvym9/+9u89KUvzQ033DBorR/60Ieyxhpr5Oc//3mS5N57780dd9yR97znPZk1a1bWWmut7LHHHvn617+efffdd5HHfeedd+ayyy7LL37xi7z85S/Pfvvtl2OPPTYf//jH861vfWtU3ttEoAQAAJYRc+fOzZve9KbcdNNNqao88sgjSZLXvva1eclLXpIPfOADOfvss/Oa17wmSXLZZZc9MUq4++6755577sncuXOTJC9/+cuz8sorD7nPiy66KNdff/0Tr//whz/k/vvvz2qrrTboul/5yleeeL3WWmvl0ksvza677pr11lsvSbL//vvn0ksvHTJQ7rvvvlluueWy+eab53e/+92QdXYlUAIAAMuE97///dltt91y3nnnZfbs2dl1112TJBtuuGHWWWedXHvttTnrrLPyuc99LknSWvuzPuZ/V+Oqq646rH0+/vjjueKKK4YVPltrf/ZdkIPVsGAtSfLQQw89qW3FFVccVh9PlUAJAAAsNuP5NR9z587NhhtumCQ55ZRTntT2ute9Lh/96Eczd+7cbLnllkmSXXbZJaeffnre//7355JLLsm6666b1VdffZH7WG211fKHP/zhidd77LFHTjzxxLzrXe9KklxzzTWZNm3aoNvOX/f4449P0pvyut122+Wtb31r7r777qy11lo588wz85a3vCVJ8oxnPCM33HBDnve85+W8884bdNRzwdruv//+Ra4zUm7KAwAALBPe/e5354gjjshOO+2Uxx577Elt++23X77yla/kta997RPLZsyYkZkzZ2bq1Kl573vfm1NPPXXIfeyzzz4577zznrgpzwknnPBEH5tvvnlOOumkhW575JFH5t57780WW2yRrbbaKhdffHHWX3/9HHPMMdltt92y1VZbZZtttskrXvGKJMmxxx6bvffeO7vvvnvWX3/9IWubOnVqJk2alK222mrUbspTYzn8uTSYPn16mzlz5niXAQAAS6Qbbrghm2222XiXwTAN9vuqqlmttemDrW+EEgAAgE5cQwkAALAYnXzyyfnUpz71pGU77bRTPv3pT49TRd0JlAAAAIvRgQcemAMPPHC8yxgVprwCAADQiUAJAABAJwIlAAAAnbiGEgAAWHxmrDHK/c0dlW7uu+++nHHGGTnssMNGpb/BHH/88Tn44IOzyiqrjNk+hnLKKadkjz32yAYbbDAq/RmhBAAAlhmttTz++ON/tvy+++7LZz7zmTHd9/HHH58HHnhgTPcxlFNOOSV33HHHqPUnUAIAAEu12bNnZ7PNNsthhx2WbbbZJh/60Iey7bbbZurUqTnqqKOSJO9973vz61//OtOmTcu73vWuHHbYYfnGN76RJHnlK1+Zv/3bv02SfOELX8iRRx6ZJDnttNPywhe+MNOmTcshhxySxx57LEly4YUXZocddsg222yT17zmNZk3b15OOOGE3HHHHdltt92y2267LbTWCy64INtss0222mqrvPjFL06SzJkzJ/vuu2+mTp2a7bffPtdee22SZMaMGfn4xz/+xLZbbLFFZs+e/cTxHnTQQXn+85+fPfbYIw8++GDOOeeczJw5M/vvv3+mTZuWBx988Cm/twIlAACw1Lvxxhvzxje+Mccdd1xuv/32/OQnP8k111yTWbNm5dJLL82xxx6bZz/72bnmmmvysY99LLvsskt++MMfJkluv/32XH/99UmSyy67LDvvvHNuuOGGnHXWWbn88stzzTXXZPnll8/pp5+eu+++O0cffXQuuuiiXHXVVZk+fXo+8YlP5PDDD88GG2yQiy++OBdffPGgNd5111056KCDcu655+ZnP/tZvvrVryZJjjrqqGy99da59tpr85GPfCRvfOMbhzzem266KW9+85tz3XXXZc0118y5556b/fbbL9OnT8/pp5+ea665JiuvvPJTfl9dQwkAACz1Ntlkk2y//fZ55zvfmQsvvDBbb711kmTevHm56aabsvHGGz9p/Z133jnHH398rr/++my++ea59957c+edd+aKK67ICSeckFNPPTWzZs3KtttumyR58MEH8/SnPz0//vGPc/3112ennXZKkvzpT3/KDjvsMKwaf/zjH2eXXXbJpptumiRZe+21k/RC7Lnnnpsk2X333XPPPfdk7txFXzu66aabZtq0aUmSF7zgBZk9e/awahgpgRIAAFjqrbrqqkl611AeccQROeSQQ57UvmDg2nDDDXPvvffmggsuyC677JI5c+bk7LPPzuTJk7PaaqultZY3velNOeaYY5603Te/+c285CUvyZlnnjniGltrqapBly+oqjJp0qQnXQ/60EMPPfF8xRVXfOL58ssvPyrTWwdjyisAALDMeOlLX5ovfvGLmTdvXpLedNbf//73WW211XL//fc/ad0ddtghxx9/fHbZZZfsvPPO+fjHP56dd945SfLiF78455xzTn7/+98n6V3neMstt2T77bfP5Zdfnl/96ldJkgceeCC//OUvk2TQfSy4vx/84Af5zW9+80SfSbLLLrvk9NNPT5JccsklWXfddbP66qtnypQpueqqq5IkV1111RPbLcpQNYyUEUoAAGDxGaWv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
 "
 >
 </div>
@@ -23725,10 +23220,21 @@ Name: stages_of_dog, dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[58]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[67]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweet_df_mergev2</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Pie chart for dog_stages, where the slices will be ordered and plotted counter-clockwise:</span>
+<span class="n">labels</span> <span class="o">=</span> <span class="s1">&#39;pupper&#39;</span><span class="p">,</span> <span class="s1">&#39;doggo &#39;</span><span class="p">,</span> <span class="s1">&#39;puppo&#39;</span><span class="p">,</span> <span class="s1">&#39;floofer&#39;</span>
+<span class="n">sizes</span> <span class="o">=</span> <span class="p">[</span><span class="mi">255</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+<span class="n">names</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;stages_of_dog&#39;</span><span class="p">)</span>                               
+<span class="n">explode</span> <span class="o">=</span> <span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span>  <span class="c1"># only &quot;explode&quot; the 2nd slice (i.e. &#39;Hogs&#39;)</span>
+
+<span class="n">fig1</span><span class="p">,</span> <span class="n">ax1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">pie</span><span class="p">(</span><span class="n">sizes</span><span class="p">,</span> <span class="n">explode</span><span class="o">=</span><span class="n">explode</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="n">labels</span><span class="p">,</span> <span class="n">autopct</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%1.1f%%</span><span class="s1">&#39;</span><span class="p">,</span>
+        <span class="n">shadow</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">startangle</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;equal&#39;</span><span class="p">)</span>  <span class="c1"># Equal aspect ratio ensures that pie is drawn as a circle.</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;dog_stages&#39;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -23744,7 +23250,49 @@ Name: stages_of_dog, dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[58]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedImage jp-OutputArea-output ">
+<img src="data:image/png;base64,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
+"
+>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[68]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Popularity of user retweet</span>
+<span class="n">tweet_df_mergev2</span><span class="o">.</span><span class="n">sort_values</span><span class="p">([</span><span class="s1">&#39;tweet_id&#39;</span><span class="p">,</span> <span class="s1">&#39;retweet_count&#39;</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">])</span>
+
+<span class="n">tweet_df_mergev2</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[68]:</div>
 
 
 
@@ -23795,7 +23343,7 @@ Name: stages_of_dog, dtype: int64</pre>
       <td>7510</td>
       <td>35521</td>
       <td>[0, 85]</td>
-      <td></td>
+      <td>None</td>
     </tr>
     <tr>
       <th>1</th>
@@ -23810,7 +23358,22 @@ Name: stages_of_dog, dtype: int64</pre>
       <td>5574</td>
       <td>30744</td>
       <td>[0, 138]</td>
-      <td></td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>891815181378084864</td>
+      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
+      <td>This is Archie. He is a rare Norwegian Pouncin...</td>
+      <td>https://twitter.com/dog_rates/status/891815181...</td>
+      <td>12</td>
+      <td>10</td>
+      <td>Archie</td>
+      <td>Mon Jul 31 00:18:03 +0000 2017</td>
+      <td>3690</td>
+      <td>23113</td>
+      <td>[0, 121]</td>
+      <td>None</td>
     </tr>
   </tbody>
 </table>
@@ -23826,55 +23389,7 @@ Name: stages_of_dog, dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[59]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweet_df_mergev2</span><span class="o">.</span><span class="n">timestamp</span><span class="o">.</span><span class="n">value_counts</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[59]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&lt;bound method IndexOpsMixin.value_counts of 0       Tue Aug 01 16:23:56 +0000 2017
-1       Tue Aug 01 00:17:27 +0000 2017
-2       Mon Jul 31 00:18:03 +0000 2017
-3       Sun Jul 30 15:58:51 +0000 2017
-4       Sat Jul 29 16:00:24 +0000 2017
-                     ...              
-2326    Mon Nov 16 00:24:50 +0000 2015
-2327    Mon Nov 16 00:04:52 +0000 2015
-2328    Sun Nov 15 23:21:54 +0000 2015
-2329    Sun Nov 15 23:05:30 +0000 2015
-2330    Sun Nov 15 22:32:08 +0000 2015
-Name: timestamp, Length: 2331, dtype: object&gt;</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[60]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[69]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># marge tweet_df_merge and image_df_clean  </span>
@@ -23896,7 +23411,7 @@ Name: timestamp, Length: 2331, dtype: object&gt;</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[60]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[69]:</div>
 
 
 
@@ -23919,7 +23434,7 @@ Name: timestamp, Length: 2331, dtype: object&gt;</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[61]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[70]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweet_df_main</span><span class="o">.</span><span class="n">shape</span>  <span class="c1"># deling with one database            </span>
@@ -23938,7 +23453,7 @@ Name: timestamp, Length: 2331, dtype: object&gt;</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[61]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[70]:</div>
 
 
 
@@ -23956,7 +23471,7 @@ Name: timestamp, Length: 2331, dtype: object&gt;</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[62]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[71]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweet_df_main</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
@@ -23975,7 +23490,7 @@ Name: timestamp, Length: 2331, dtype: object&gt;</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[62]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[71]:</div>
 
 
 
@@ -23996,10 +23511,10 @@ Name: source, dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[63]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[72]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#raplace None_None_None_None with stages_of_dog &quot;&quot; </span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#raplace url source by the main source &quot;</span>
 <span class="n">tweet_df_mainv2</span><span class="o">=</span><span class="n">tweet_df_main</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 <span class="n">tweet_df_mainv2</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">tweet_df_mainv2</span><span class="p">[</span><span class="s1">&#39;source&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;&lt;a href=&quot;http://twitter.com/download/iphone&quot; rel=&quot;nofollow&quot;&gt;Twitter for iPhone&lt;/a&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;source&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;iPhone&#39;</span>
 <span class="n">tweet_df_mainv2</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">tweet_df_mainv2</span><span class="p">[</span><span class="s1">&#39;source&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;&lt;a href=&quot;http://twitter.com&quot; rel=&quot;nofollow&quot;&gt;Twitter Web Client&lt;/a&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;source&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Web Client&#39;</span>
@@ -24020,7 +23535,7 @@ Name: source, dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[63]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[72]:</div>
 
 
 
@@ -24041,7 +23556,7 @@ Name: source, dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[64]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[73]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># plot Most used Twitter source</span>
@@ -24049,7 +23564,7 @@ Name: source, dtype: int64</pre>
 <span class="n">Twitter_source</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;source&quot;</span><span class="p">)</span>
 <span class="n">Twitter_source</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Number of Tweets&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">((</span><span class="s2">&quot;Most used Twitter source&quot;</span><span class="p">))</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;Twitter_source.png&#39;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -24085,7 +23600,7 @@ Name: source, dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[65]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[74]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># save new datasets </span>
@@ -24107,7 +23622,7 @@ Name: source, dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[65]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[74]:</div>
 
 
 
@@ -24152,6 +23667,7 @@ Name: source, dtype: int64</pre>
 <a href="https://pandoc.org/getting-started.html">https://pandoc.org/getting-started.html</a>
 <a href="https://github.com/pyppeteer/pyppeteer">https://github.com/pyppeteer/pyppeteer</a>
 <a href="https://www.latex-project.org/">https://www.latex-project.org/</a></p>
+<h4 id="How-to-Save-a-Plot-to-a-File-Using-Matplotlib">How to Save a Plot to a File Using Matplotlib<a class="anchor-link" href="#How-to-Save-a-Plot-to-a-File-Using-Matplotlib">&#182;</a></h4><p><a href="https://chartio.com/resources/tutorials/how-to-save-a-plot-to-a-file-using-matplotlib/">https://chartio.com/resources/tutorials/how-to-save-a-plot-to-a-file-using-matplotlib/</a></p>
 <h4 id="Past-project">Past project<a class="anchor-link" href="#Past-project">&#182;</a></h4><p><a href="https://github.com/abdelrazekrizk/IBM-Data-Science-by-IBM-on-Coursera-Capstone/blob/master/Capstone%20Project/Business%20Consulting%20Making%20Decisions.ipynb">https://github.com/abdelrazekrizk/IBM-Data-Science-by-IBM-on-Coursera-Capstone/blob/master/Capstone%20Project/Business%20Consulting%20Making%20Decisions.ipynb</a></p>
 
 </div>
